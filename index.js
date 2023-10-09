@@ -111,7 +111,7 @@ function sendNextPhoto(chatId) {
   const photoPath = `${photoPaths[game.category]}/${game.currentPhoto}`;
 
   // Include the round number, answer hint, and answer length in the caption
-  const caption = `🎲Raund: ${game.round}/${30}\n🧩Fotoğraflara uygun cevabı bul chate yaz\n🔠 İlk Harf: ${game.currentPhoto.split('.')[0][0]}\nℹ️ Uzunluk: ${game.currentPhoto.split('.')[0].length} harf`;
+  const caption = `🎲Raund: ${game.round}/${30}\n🧩Fotoğraflara uygun cevabı bul chate yaz\n\n🔠 İlk Harf: ${game.currentPhoto.split('.')[0][0]}\n\nℹ️ Uzunluk: ${game.currentPhoto.split('.')[0].length} harf`;
 
   if (game.round === 1) {
     bot.sendMessage(chatId, `${game.category} Kategorisinde Oyun başladı! İyi eğlenceler!`);
